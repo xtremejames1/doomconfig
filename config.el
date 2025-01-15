@@ -81,49 +81,6 @@
         (plist-put org-format-latex-options :scale 1.5)
         org-latex-create-formula-image-program 'dvisvgm))
 
-
-;; (after! org
-;;   ;; (use-package! org-fragtog)
-;;   ;; (use-package! org-appear)
-;;   (setq org-latex-create-formula-image-program 'dvisvgm)  ; Use dvisvgm for better quality
-;;   (setq org-preview-latex-default-process 'dvisvgm)
-
-;;   ;; First enable the modes we need
-;;   (add-hook 'org-mode-hook (lambda ()
-;;     ;; (turn-on-org-cdlatex)
-;;     (variable-pitch-mode 1)
-;;     ;; (org-toggle-pretty-entities)
-;;     ))
-
-;;
-;; Configure org-appear if needed
-;;   ;; (setq org-appear-trigger 'manual)
-;;   ;; (setq org-appear-delay 0.3)
-;;   )
-
-;; (setq org-appear-trigger 'manual)
-;; (add-hook 'org-mode-hook (lambda ()
-;;                            (add-hook 'evil-insert-state-entry-hook
-;;                                      #'org-appear-manual-start
-;;                                      nil
-;;                                      t)
-;;                            (add-hook 'evil-insert-state-exit-hook
-;;                                      #'org-appear-manual-stop
-;;                                      nil
-;;                                      t)))
-;; (after! org
-;;   (require 'org-fragtog)
-;;   (require 'org-appear)
-
-;;   (add-hook 'org-mode-hook #'turn-on-org-cdlatex)
-;;   (add-hook 'org-mode-hook 'org-fragtog-mode)
-;;   (add-hook 'org-mode-hook 'org-appear-mode)
-;;   (add-hook 'org-mode-hook 'org-toggle-pretty-entities)
-;;   (add-hook 'org-mode-hook 'variable-pitch-mode))
-
-;; (after! org
-;; )
-
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
